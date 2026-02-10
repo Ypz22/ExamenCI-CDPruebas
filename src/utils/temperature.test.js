@@ -51,6 +51,6 @@ describe('Pruebas de la función movingAverage', () => {
     });
     //Jefferson Yepez
     test('Si la ventana tiene datos no numericos devuelve un error', () => {
-        expect(() => movingAverage([1, 2, 3], 2)).toThrow(TypeError);
+        expect(() => movingAverage([1, 2, "abc"], 2)).toThrow(TypeError);
     });
 });
