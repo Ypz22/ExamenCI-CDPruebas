@@ -12,7 +12,7 @@ const toCelsius = (f) => {
 //Jefferson Yepez
 const toFahrenheit = (c) => {
     if (!Number.isFinite(c)) {
-        throw new TypeError("La temperatura debe ser un numero finito");
+        throw new TypeError('La temperatura debe ser un numero finito');
     }
 
     const fahrenheit = (c * (9 / 5)) + 32;
@@ -25,7 +25,7 @@ function movingAverage(series, window) {
     }
 
     if (!Number.isInteger(window)) {
-        throw new TypeError("La ventana debe ser un numero entero");
+        throw new TypeError('La ventana debe ser un numero entero');
     }
 
     if (window < 2 || window > series.length) {
